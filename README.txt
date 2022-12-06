@@ -25,5 +25,6 @@ La méthode delete se lance et va supprimer la ligne correspondant à cet id s'i
 Si l'id n'existe pas, ou plus, on a un retour sur le terminal que cet id n'existe pas.
 
 2)un service pour hasher les données des personnes:
-- on le lance en écrivant "-h x" avec x l'id de la personne qu'on veut hasher
-
+- on le lance en écrivant "-h x" avec x l'id de la personne qu'on veut hasher.
+La méthode hash se lance et va encrypter la ligne correspondant à cet id s'il existe bien.
+Si l'id n'existe pas, ou plus, on a un retour sur le terminal que cet id n'existe pas.
