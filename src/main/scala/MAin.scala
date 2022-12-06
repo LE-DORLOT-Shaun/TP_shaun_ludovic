@@ -33,7 +33,8 @@ def main(args: Array[String]): Unit = {
               StructField("date", DateType))
           )
 
-        val data: DataFrame = sparkSession.read.option("header", true).csv("data")
+        //val data: DataFrame = sparkSession.read.option("header", true).csv("data")
+        val data: DataFrame = sparkSession.read.option("header", true).csv("hdfs://192.168.1.110:8020/user/administrator/datashaunludovic.csv")
         val ft = data.filter("id=12")
         //data.printSchema()
 
