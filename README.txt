@@ -21,8 +21,8 @@ Nous avons implémenté deux services:
 
 1) un service pour ne pas prendre en compte une ligne d'un CSV :
 - on le lance en écrivant "-d x" en ligne de commande avec x qui est l'id de la personne que l'on veut supprimer
-La méthode delete se lance et va supprimer la ligne correspondant à cet id.
-Si l'id n'existe pas, ou plus, il sera affiché sur le terminal que cet id n'existe pas.
+La méthode delete se lance et va supprimer la ligne correspondant à cet id s'il existe bien.
+Si l'id n'existe pas, ou plus, on a un retour sur le terminal que cet id n'existe pas.
 
 2)un service pour hasher les données des personnes:
 - on le lance en écrivant "-h x" avec x l'id de la personne qu'on veut hasher
